@@ -31,7 +31,7 @@
             <el-input v-model="result.title" class="inputStyle" placeholder="请输入要查询的影视剧名"></el-input>
             <el-button type="primary" @click="searchOne" class="btnStyle">搜索</el-button>
             <el-button  type="success" icon="el-icon-download">
-              数据导出
+              导出数据
             </el-button>
           </div>
 
