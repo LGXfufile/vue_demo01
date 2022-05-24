@@ -26,7 +26,7 @@
           <!--        <el-menu>-->
           <!--          <el-menu-item class="xxx"></el-menu-item>-->
           <!--        </el-menu>-->
-          <div style="margin: 35px 0">
+          <div style="margin: 80px 0">
 
             <el-input v-model="result.title" class="inputStyle" placeholder="请输入要查询的影视剧名"></el-input>
             <el-button type="primary" @click="searchOne" class="btnStyle">搜索</el-button>
@@ -83,7 +83,7 @@
               :page-sizes="[20, 50, 100]"
               :page-size="20"
               layout="total, sizes, prev, pager, next, jumper"
-              :total="400">
+              :total="800">
           </el-pagination>
         </el-col>
         <el-col :span="6">
@@ -105,8 +105,6 @@
 
       </el-row>
     </el-main>
-
-
   </el-container>
 </template>
 <script>
@@ -265,6 +263,7 @@ export default {
   font-size: 30px;
   margin: 10px 0;
   color: black;
+  position: fixed;
 }
 
 /*.bg-purple {*/
@@ -327,8 +326,10 @@ export default {
 .el-header {
 
   box-sizing: border-box;
+  width: 100%;
   flex-shrink: 0;
   background-color: cornflowerblue;
+  position: fixed;
 }
 
 .el-menu {
@@ -374,10 +375,10 @@ element.style {
 .inSty{
   width: 80%;
 }
-.headerSelf{
-  background-color: cornflowerblue ;
-  height: 30px;
-}
+/*.headerSelf{*/
+/*  !*background-color: cornflowerblue ;*!*/
+/*  height: 30px;*/
+/*}*/
 .headerSelf[data-v-61dd7a3d] {
   background-color: cornflowerblue;
   height: 0;
