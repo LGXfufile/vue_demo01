@@ -88,7 +88,8 @@
         </el-col>
         <el-col :span="6">
           <div class="grid-content bg-purple">
-            <el-button type="primary" @click="dialogVisible = true" class="zzStyle">点击进入群聊提需求</el-button>
+            <el-button type="primary" @click="dialogVisible = true" class="zzStyle">扫码群聊查看更多文案</el-button>
+            <img src="../../wechatImg.jpg" class="imgStyle"/>
           </div>
         </el-col>
         <el-dialog
@@ -253,6 +254,11 @@ export default {
 </script>
 
 <style scoped>
+.imgStyle{
+  margin: 10px 20px;
+  width: 80%;
+  width: 80%;
+}
 .xxx {
   text-align: center;
   font-weight: bold;
