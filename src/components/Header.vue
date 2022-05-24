@@ -57,19 +57,20 @@
               :pagination="pagination"
               style="width: 100%;text-align: center;">
             <el-table-column
-                type="selection"
                 prop="id"
                 label="序号"
                 align="center"
                 width="180">
             </el-table-column>
             <el-table-column
+                :show-overflow-tooltip="true"
                 prop="title"
                 label="标题"
                 align="center"
                 width="180">
             </el-table-column>
             <el-table-column
+                :show-overflow-tooltip="true"
                 prop="des"
                 align="center"
                 label="影视剧情文案">
@@ -79,8 +80,8 @@
               @size-change="handleSizeChange"
               @current-change="handleCurrentChange"
               :current-page="cur_page"
-              :page-sizes="[5, 20, 50, 100]"
-              :page-size="5"
+              :page-sizes="[20, 50, 100]"
+              :page-size="20"
               layout="total, sizes, prev, pager, next, jumper"
               :total="400">
           </el-pagination>
@@ -126,7 +127,7 @@ export default {
       // },
       dialogVisible: false,
       cur_page: 1,
-      pageSize: 5,
+      pageSize: 20,
       pagination: {
         defaultPageSize: 12,
       },
